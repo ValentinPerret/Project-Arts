@@ -6,6 +6,6 @@ code = gets.chomp
 code = '8jZ3h6lbjDw'
 code2 = '_NWmuRZm85E'
 
-system("omxplayer -b `youtube-dl -g #{code}`")
+system("omxplayer -b `youtube-dl -f bestvideo -g #{code}`")
 
-system("omxplayer -b `youtube-dl -g #{code2}`")
+system("omxplayer -b `youtube-dl -f bestvideo -g #{code2}`")
